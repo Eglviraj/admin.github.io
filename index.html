@@ -572,6 +572,7 @@
 			var itemView = document.createElement("div");
 			itemView.className = "recyclerViewItem";
 			itemView.innerHTML = data.isbn + ' | ' + data.category + ' | ' +data.author + '<br>' + (data.title.substring(9) ) ;
+			itemView.style.overflow = 'hidden';
 			
 			// Add delete button
 			var deleteButton = document.createElement("button");
