@@ -571,7 +571,7 @@
 			var data = childSnapshot.val();
 			var itemView = document.createElement("div");
 			itemView.className = "recyclerViewItem";
-			itemView.innerHTML = data.isbn + ' | ' + data.category + ' | ' +data.author + '<br>' + (data.title.substring(9) ) ;
+			itemView.innerHTML = data.isbn + ' | ' + data.category + ' | ' +data.author + '<br>' + (data.title.slice(-10) ) ;
 			itemView.style.overflow = 'hidden';
 			
 			// Add delete button
